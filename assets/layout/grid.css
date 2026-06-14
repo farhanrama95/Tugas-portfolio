@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr 50px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "navbar  navbar  navbar"
+    "main    main    main"
+    "footer  footer  footer";
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    grid-gap: 12px;
+}
+
+header{
+    grid-area: navbar;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+main{
+    grid-area: main;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+footer{
+    grid-area: footer;
+    border: 5px solid rgb(0, 0, 0);
+}

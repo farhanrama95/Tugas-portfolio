@@ -1,0 +1,13 @@
+/* STYLE UNTUK CSS RESPONSIF */
+@media (max-width:767px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul{
+        margin: 0.5rem;
+    }
+}
