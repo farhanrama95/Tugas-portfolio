@@ -1,6 +1,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
+body{
+    box-sizing: border-box;
+}
+
+
 /* hover pada navbar */
 nav ul a:hover{
     background-color: gray;
+}
+
+/* PROFILE CARD */
+.profile-card img{
+    height: auto;
+    width: 90vh;
+    margin: 10px;
 }
