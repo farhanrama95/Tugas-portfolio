@@ -12,19 +12,34 @@
 </head>
 <body>
     <header >
-        <nav class="d-flex gap-12 navbar navbar-expand-sm sticky-top d-flex justify-content-between  ">
-            <h1 class="ps-3 text-light">Portfolio</h1>
-            <ul class="list-unstyled d-flex gap-4 m-4">
-                <li><a class="text-light text-decoration-none " href="index.html">Home</a></li>
-                <li><a class="text-light text-decoration-none" href="project.html">Project</a></li>
-                <li><a class="text-light text-decoration-none" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="sticky-top">
+                <h1 class="ps-3 text-light">Portfolio</h1>
+
+                <div class="menu-button" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <ul class="list-unstyled" id="menuList">
+                    <li><a class="text-light text-decoration-none" href="index.html">Home</a></li>
+                    <li><a class="text-light text-decoration-none" href="project.html">Project</a></li>
+                    <li><a class="text-light text-decoration-none" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
     </header>
 
-    <main>
 
+    <main class="project-grid">
+        <a href="https://top-3-avenger-movie.vercel.app">
+            <img src="assets/img/Screenshot 2026-06-17 202859.webp" alt="3 top-3-avenger-movie">
+        </a>
+        <a href="https://uts-a-website-semantik-0011.vercel.app/">
+            <img src="assets/img/Screenshot 2026-06-17 202934.webp" alt="">
+        </a>
+        <a href="https://website-artikel-lukisan-van-gogh-rm.vercel.app/">
+            <img src="assets/img/Screenshot 2026-06-17 202956.webp" alt="">
+        </a>
     </main>
+
 
 
 

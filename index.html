@@ -12,19 +12,38 @@
 </head>
 <body>
     <header >
-        <nav class="d-flex gap-12 navbar navbar-expand-sm sticky-top d-flex justify-content-between  ">
-            <h1 class="ps-3 text-light">Portfolio</h1>
-            <ul class="list-unstyled d-flex gap-4 m-4">
-                <li><a class="text-light text-decoration-none " href="index.html">Home</a></li>
-                <li><a class="text-light text-decoration-none" href="project.html">Project</a></li>
-                <li><a class="text-light text-decoration-none" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="sticky-top">
+                <h1 class="ps-3 text-light">Portfolio</h1>
+
+                <div class="menu-button" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <ul class="list-unstyled" id="menuList">
+                    <li><a class="text-light text-decoration-none" href="index.html">Home</a></li>
+                    <li><a class="text-light text-decoration-none" href="project.html">Project</a></li>
+                    <li><a class="text-light text-decoration-none" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
     </header>
 
     <main class="profile-card">
-        <section class="">
-            <img src="assets/img/light.webp" alt="">
+        <section class="intro">
+            <img src="assets/img/ChatGPT Image Jun 16, 2026, 12_41_23 PM.tuxpi-Photoroom.png" alt="">
+            <div class="bio">
+                <h1>I'm Farhan</h1>
+                <div class="machine">
+                    <span class="line" id="line"></span><span class="cursor">&nbsp;</span>
+                </div>
+                <ul>
+                    <li>✅Former Information System Student</li>
+                    <li>🗿Teh tarik satu</li>
+                    <li>💻Frontend dev</li>
+                    <li>🤖Machine Learning fundamental</li>
+                    <li>🚀Love to learn something new</li>
+                    <li>🔥Coding silently, shows them the results</li>
+                </ul>
+            </div>
         </section>
     </main>
 

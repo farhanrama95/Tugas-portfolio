@@ -1,18 +1,154 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-body{
+body {
+    height: 100vh;
     box-sizing: border-box;
+    background: var(--bg-primary);
 }
 
+:root {
+    --bg-primary: rgb(251, 233, 219);
+    --bg-secondary: rgb(100, 38, 0);
+}
+
+/* ── NAVBAR ── */
+nav {
+    background: var(--bg-secondary);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
 
 /* hover pada navbar */
-nav ul a:hover{
+nav ul a:hover {
     background-color: gray;
 }
 
-/* PROFILE CARD */
-.profile-card img{
+/* ── HAMBURGER BUTTON ── */
+.menu-button {
+    color: white;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+/* ── MENU LIST (desktop) ── */
+#menuList {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+/* ── PROFILE CARD ── */
+.profile-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+    min-height: 90vh;
+}
+
+.profile-card img {
     height: auto;
-    width: 90vh;
-    margin: 10px;
+    max-width: 100%;
+    margin: 20px;
+    padding: 10px;
+    -webkit-mask-image: linear-gradient(to bottom, rgb(255, 255, 255) 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, rgb(212, 212, 212) 60%, transparent 100%);
+}
+
+/* ── PROJECT GRID ── */
+.project-grid {
+    grid-area: main;
+}
+
+/* EFEK TEKS */
+.machine {
+    color: var(--bg-secondary);
+    max-width: 600px;
+  }
+ 
+  .line {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+ 
+  .cursor {
+    display: inline-block;
+    width: 2px;
+    background: var(--bg-secondary);
+    margin-left: 2px;
+    animation: blink 0.8s steps(1) infinite;
+  }
+ 
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+
+  /* default: mobile, gambar di atas bio di bawah */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-card ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+    margin: 2rem;
+    border: 6px solid var(--bg-secondary);
+    border-radius: 20px;
+
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.contact i{
+    font-size: 2rem;
+    color: var(--bg-secondary);
+}
+
+.project-grid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-grid img{
+    height: auto;
+    min-width: 20vh;
+    gap:2rem;
+    margin: 20px;
+    border:6px solid var(--bg-secondary) ;
+    border-radius: 20px;
+}
+
+.jdl{
+    text-align: center;
+    gap: 2rem;
+}
+
+footer{
+    background-color: var(--bg-secondary);
+    height: 1.5cm;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }

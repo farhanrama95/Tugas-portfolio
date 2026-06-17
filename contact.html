@@ -12,14 +12,25 @@
 </head>
 <body>
     <header >
-        <nav class="d-flex gap-12 navbar navbar-expand-sm sticky-top d-flex justify-content-between  ">
-            <h1 class="ps-3 text-light">Portfolio</h1>
-            <ul class="list-unstyled d-flex gap-4 m-4">
-                <li><a class="text-light text-decoration-none " href="index.html">Home</a></li>
-                <li><a class="text-light text-decoration-none" href="project.html">Project</a></li>
-                <li><a class="text-light text-decoration-none" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+            <nav class="sticky-top">
+                <h1 class="ps-3 text-light">Portfolio</h1>
+
+                <div class="menu-button" onclick="toggleMenu()">
+                    <i class="bi bi-list"></i>
+                </div>
+
+                <ul class="list-unstyled" id="menuList">
+                    <li><a class="text-light text-decoration-none" href="index.html">Home</a></li>
+                    <li><a class="text-light text-decoration-none" href="project.html">Project</a></li>
+                    <li><a class="text-light text-decoration-none" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <main class="contact">
+                <p>Sosial media saya untuk informasi lebih lanjut:</p>
+                <a href="https://www.instagram.com/m.farhanra/" target="_blank" title="akun instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://github.com/farhanrama95" target="_blank" title="akun github"><i class="bi bi-github"></i></a>
+            </main>
     </header>
 
     <main>

@@ -1,13 +1,90 @@
 /* STYLE UNTUK CSS RESPONSIF */
-@media (max-width:767px){
-    nav{
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+/* ── RESPONSIVE 767px ke bawah ── */
+@media (max-width: 767px) {
+
+    .menu-button {
+        display: block;
     }
 
-    nav ul{
-        margin: 0.5rem;
+    #menuList {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: var(--bg-secondary);
+        border-radius: 0 0 0 8px;
+        box-shadow: -2px 4px 12px rgba(0, 0, 0, 0.4);
+        padding: 0.5rem 0;
+        z-index: 999;
+    }
+
+    #menuList.show {
+        display: flex;
+    }
+
+    #menuList li {
+        width: 100%;
+    }
+
+    #menuList li a,
+    #menuList li i {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        color: #fff;
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+
+    #menuList li a:hover {
+        background-color: gray;
+    }
+
+    .profile-card{
+        padding: 0;
+    }
+
+    .bio li{
+        font-size: 1rem;
+        margin:4px ;
+    }
+
+    .contact{
+        flex-direction: column;
+        font-size: 18px;
+    }
+
+    .contact a{
+        flex-direction: row;
+    }
+
+    .project-grid{
+        flex-direction: column;
+        height: 200vh;
+        justify-content: baseline;
+    }
+
+    .project-grid img{
+        max-height: 50vh;
+        margin: 5rem;
+    }
+}
+
+@media (min-width: 768px){
+    .intro {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .intro img {
+        max-width: 40%;
+        flex-shrink: 0;
+    }
+
+    .intro .bio {
+        flex: 1;
     }
 }

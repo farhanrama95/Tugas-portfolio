@@ -9,21 +9,20 @@ body{
     "footer  footer  footer";
     font-weight: 600;
     font-size: 20px;
-    padding: 10px 10px 10px 10px;
-    grid-gap: 12px;
 }
 
 header{
     grid-area: navbar;
-    border: 5px solid rgb(0, 0, 0);
 }
 
 main{
     grid-area: main;
-    border: 5px solid rgb(0, 0, 0);
+    height: 100vh;
 }
 
 footer{
     grid-area: footer;
-    border: 5px solid rgb(0, 0, 0);
+    text-align: center;
+    color: var(--bg-primary
+    );
 }
